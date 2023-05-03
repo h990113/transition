@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Transition test</title>
+<style type="text/css">
+.container{
+    display: flex;
+	align-items: center;
+	flex-direction:column;
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    -webkit-transition: all 500ms ease-in 100ms;
+    -o-transition: all 500ms ease-in 100ms;
+    transition: all 500ms ease-in 100ms;
+	margin-bottom: 10px;
+	}	
+.box2{
+	width: 200px;
+	height: 200px;
+	background-color: teal;
+	-webkit-transition: all 500ms ease-in 100ms;
+    -o-transition: all 500ms ease-in 100ms;
+    transition: all 500ms ease-in 100ms;
+	margin-bottom: 10px;
+	}
+.box3{
+	width: 200px;
+	height: 200px;
+	background-color: crimson;
+	-webkit-transition: all 500ms ease-in 100ms;
+    -o-transition: all 500ms ease-in 100ms;
+    transition: all 500ms ease-in 100ms;
+	}
+.box1:hover {
+    background-color: #77DB1D;
+	transform: rotate(45deg)
+}
+.box2:hover{
+	background-color: blueviolet;
+	transform:translate(10px,-10px)
+	}
+.box3:hover{
+	background-color: burlywood;
+	transform: scale(1.5)
+	}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+</div>
+</body>
+</html>
